@@ -21,10 +21,6 @@ class Food extends MainArticle {
         $this->desc = $_desc;
     }
 
-    public function getPrice(){
-        return ($this->prezzo)/100 . ' euro';
-    }
-
 };
 
 

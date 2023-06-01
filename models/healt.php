@@ -19,9 +19,6 @@ class Healt extends MainArticle {
         $this->genres = 'accessori';
     }
 
-    public function getPrice(){
-        return ($this->prezzo)/100 . ' euro';
-    }
 
 };
 ?>
