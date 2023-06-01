@@ -20,7 +20,9 @@ require __DIR__ . '/../../database/db.php'
                         <h5 class="card-title"><?php echo $element->Article ?></h5>
                         <p class="card-text"><?php echo $element->desc ?></p>
                         <div class="row">
-                            <div class="col-6"><?php echo $element->peso ?> g.</div>
+                            <?php if( isset($element->peso)) : ?>
+                                <?php echo '<div class="col-6">'.$element->peso.'g.</div>' ?>
+                             <?php endif; ?>
                             <div class="col-6"><?php echo $element->getPrice() ?></div>
                         </div>
                       </div>
