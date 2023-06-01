@@ -20,7 +20,7 @@ class Healt extends MainArticle {
     }
 
     public function getPrice(){
-        return ($this->prezzo)/100;
+        return ($this->prezzo)/100 . ' euro';
     }
 
 };
