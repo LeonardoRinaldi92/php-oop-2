@@ -1,23 +1,8 @@
 <?php
 require __DIR__ . '/../../database/db.php';
-
-//funzione filtro animali
-$filteredArray = array_filter($arrayArticoli, function ($item) {
-    return $item->AnimalType === 1;
-});
-
-//funzione filtro categoria
-$filteredArray2 = array_filter($arrayArticoli, function ($item) {
-    return $item->genres === 'accessori';
-});
+include_once __DIR__ . '/../../components/functions.php'
 
 
-//funzione filtro tutto
-$filteredArray3 = array_filter($arrayArticoli, function ($item) {
-    return $item->genres === 'accessori' and  $item->AnimalType === 1;
-});
-
-var_dump($filteredArray3)
 
 
 
@@ -25,6 +10,34 @@ var_dump($filteredArray3)
 
 
 ?>
+<form action="index.php" method="POST">
+    <div class="row">
+        <div class="col-2">
+            <select class="form-select" aria-label="animale" name="animale">
+                <option selected>Che animale cerchi?</option>
+                <option value="1">cane</option>
+                <option value="2">gatto</option>
+            </select>
+        </div>
+        <div class="col-3">
+            <select class="form-select" aria-label="genere" name="genere">
+                <option selected value="">Che genere cerchi?</option>
+                <option value="cibo">Cibo</option>
+                <option value="cura">articoli per la cura del tuo animale</option>
+                <option value="accessori">accessori per la cura del tuo animale</option>
+            </select>
+        </div>
+    
+        <div class="col-1">
+        <button type="submit">
+            CERCA
+    
+        </button>
+        
+
+        </div>
+    </div>
+</form>
 
 <div class="container py-5">
     <div class="row">
