@@ -1,11 +1,34 @@
 <?php
-require __DIR__ . '/../../database/db.php'
+require __DIR__ . '/../../database/db.php';
+
+//funzione filtro animali
+$filteredArray = array_filter($arrayArticoli, function ($item) {
+    return $item->AnimalType === 1;
+});
+
+//funzione filtro categoria
+$filteredArray2 = array_filter($arrayArticoli, function ($item) {
+    return $item->genres === 'accessori';
+});
+
+
+//funzione filtro tutto
+$filteredArray3 = array_filter($arrayArticoli, function ($item) {
+    return $item->genres === 'accessori' and  $item->AnimalType === 1;
+});
+
+var_dump($filteredArray3)
+
+
+
+
+
 
 ?>
 
 <div class="container py-5">
     <div class="row">
-        <?php foreach($arrayArticoli as $element){ ?>
+        <?php foreach($filteredArray as $element){ ?>
             <div class="col-6 my-3">
                 <div class="card p-3 h-100" >
                   <div class="row g-0">
@@ -27,7 +50,8 @@ require __DIR__ . '/../../database/db.php'
                             <div class="col-6">
                                 <h6>
                                     <?php echo $element->getPrice() ?>
-                                </h6></div>
+                                </h6>
+                            </div>
                         </div>
                       </div>
                     </div>

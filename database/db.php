@@ -16,4 +16,6 @@ $arrayArticoli = [
     new Healt(1,'Remover Macchie Oculari','https://arcaplanet.vtexassets.com/arquivos/ids/240846-1800-1800/beaphar-cane-remover-x-macchie-oculari-23pz.jpg?v=1771978393&quality=1&width=1800&height=1800','BEAPHAR','Beaphar Oftal Tear Stain Remover gocce aiuta a rimuovere le macchie (secreti oculari) intorno agli occhi che creano danno estetico al pelo.',1699)
 ];
 
+
+
 ?>

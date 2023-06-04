@@ -16,7 +16,7 @@ class Healt extends MainArticle {
         $this->marca = $_marca;
         $this->desc = $_desc;
         $this->prezzo = $_prezzo;
-        $this->genres = 'accessori';
+        $this->genres = 'cura';
     }
 
 
