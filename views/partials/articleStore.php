@@ -2,15 +2,7 @@
 require __DIR__ . '/../../database/db.php';
 include_once __DIR__ . '/../../components/functions.php';
 include_once __DIR__ . '/form.php';
-
-
-
-
-
-
-
 ?>
-
 
 <div class="container py-5">
     <div class="row">

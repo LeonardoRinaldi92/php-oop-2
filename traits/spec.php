@@ -6,4 +6,6 @@ trait Spec {
     public $desc;
     public $prezzo;
 }
+
+
 ?>
