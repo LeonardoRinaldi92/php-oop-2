@@ -1,6 +1,5 @@
 <?php 
 
-
 $animale = isset($_POST['animale']) ? intval($_POST['animale']) : 0;
 
 $genere = isset($_POST['genere']) ? $_POST['genere'] : '';
@@ -22,7 +21,4 @@ if ($animale && $genere !== '') {
 } else {
     $filteredArray = $arrayArticoli;
 }
-
-
-
 ?>

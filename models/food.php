@@ -1,14 +1,9 @@
 <?php
 include_once __DIR__ . '/../traits/spec.php';
 require_once __DIR__ . '/mainArticle.php';
-
-
 class Food extends MainArticle {
-
     use Spec;
-
     public $peso;
-
 
     public function __construct($_AnimalType, $_ArticleName, $_image, $_marca, int $_peso, int $_prezzo, $_desc){
         parent::__construct($_AnimalType, $_ArticleName);

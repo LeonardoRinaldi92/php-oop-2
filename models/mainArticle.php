@@ -20,5 +20,4 @@ class MainArticle {
         return number_format( $this->prezzo / 100, 2, ",", "") . ' euro';
     }
 }
-
 ?>

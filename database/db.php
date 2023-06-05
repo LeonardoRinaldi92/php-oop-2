@@ -1,11 +1,9 @@
 <?php
 
-
 require __DIR__ . '/../models/mainArticle.php';
 include __DIR__ . '/../models/food.php';
 include __DIR__ . '/../models/healt.php';
 include __DIR__ . '/../models/accessorize.php';
-
 
 $arrayArticoli = [
     new Food(1,'Purina One Cane Adult Mini Manzo e Riso','https://arcaplanet.vtexassets.com/arquivos/ids/279681-1800-1800/main.jpg?v=1771790881&quality=1&width=1800&height=1800','Purina',800,399,'Purina One Adult Cane Mini Manzo e Riso, nutrizione avanzata e specifica dedicata ai cani di piccola taglia.'),
@@ -15,7 +13,5 @@ $arrayArticoli = [
     new Healt(2,'Combo Antiparassitario Spot On per Gatti 6 Pipette','https://arcaplanet.vtexassets.com/arquivos/ids/285207-1800-1800/COMBO_gatto-6P_1200x1200px.jpg?v=1771978588&quality=1&width=1800&height=1800','FRONTILE','Frontline Combo 6 Pipette è un efficace antiparassitario per gattini e gatti adulti che garantisce una protezione ottimale contro le infestazioni di pulci, zecche e pidocchi.',3299),
     new Healt(1,'Remover Macchie Oculari','https://arcaplanet.vtexassets.com/arquivos/ids/240846-1800-1800/beaphar-cane-remover-x-macchie-oculari-23pz.jpg?v=1771978393&quality=1&width=1800&height=1800','BEAPHAR','Beaphar Oftal Tear Stain Remover gocce aiuta a rimuovere le macchie (secreti oculari) intorno agli occhi che creano danno estetico al pelo.',1699)
 ];
-
-
 
 ?>

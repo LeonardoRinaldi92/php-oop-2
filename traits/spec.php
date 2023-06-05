@@ -5,6 +5,5 @@ trait Spec {
     public $marca;
     public $desc;
     public $prezzo;
-
 }
 ?>
