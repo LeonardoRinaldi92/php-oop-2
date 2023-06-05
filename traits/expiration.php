@@ -10,12 +10,9 @@ trait Expiration {
         return date("d/m/Y",strtotime($this->expiration_date));
     }
 
-    public function checkExpiration(){
-        return date('d/m/Y') < $this->getExpirationeDate();
-    }
     
     public function setExpiration(){
-        if( $this->checkExpiration()){
+        if( DateTime::createFromFormat('d/m/Y',$this->expiration_date) < new DateTime()){
             return "l'articolo è scaduto";
         } else {
             return "Datat di scadenza:" .  $this->getExpirationeDate();

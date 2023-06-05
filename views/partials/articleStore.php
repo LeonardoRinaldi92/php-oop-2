@@ -2,8 +2,6 @@
 require __DIR__ . '/../../database/db.php';
 include_once __DIR__ . '/../../components/functions.php';
 include_once __DIR__ . '/form.php';
-var_dump($arrayArticoli[0]->getExpirationeDate(),date('Y-m-d'),$arrayArticoli[0]->checkExpiration());
-var_dump($arrayArticoli[2]->getExpirationeDate(),date('Y-m-d'),$arrayArticoli[2]->checkExpiration());
 ?>
 
 <div class="container py-5">
@@ -34,7 +32,7 @@ var_dump($arrayArticoli[2]->getExpirationeDate(),date('Y-m-d'),$arrayArticoli[2]
                             </div>
                             <?php if (($element->genres == 'cibo' or $element->genres == 'cura')) :?>
                                 <p class="expiration">
-                                    <?php echo $element->setExpiration() ?>
+                                    <?php echo $element->setExpiration($element) ?>
                                 </p>
                             <?php endif; ?>
                         </div>
