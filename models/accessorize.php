@@ -1,13 +1,10 @@
 <?php 
-
+include_once __DIR__ . '/../traits/spec.php';
 require_once __DIR__ . '/mainArticle.php';
 
 class accessorize extends MainArticle {
-    public $genres ;
-    public $image;
-    public $marca;
-    public $desc;
-    public $prezzo;
+
+    use Spec;
 
     public function __construct($_AnimalType, $_ArticleName, $_image, $_marca, $_desc, int $_prezzo){
         parent::__construct($_AnimalType, $_ArticleName);
