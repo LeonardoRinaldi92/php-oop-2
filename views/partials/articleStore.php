@@ -32,14 +32,12 @@ var_dump($arrayArticoli[2]->getExpirationeDate(),date('Y-m-d'),$arrayArticoli[2]
                                     <?php echo $element->getPrice() ?>
                                 </h6>
                             </div>
-                            <?php if (($element->genres == 'cibo' or $element->genres == 'cura') :?>
+                            <?php if (($element->genres == 'cibo' or $element->genres == 'cura')) :?>
                                 <p class="expiration">
-                                    <?php echo $element->checkExpiration() ?>
+                                    <?php echo $element->setExpiration() ?>
                                 </p>
                             <?php endif; ?>
                         </div>
-                        <?php 
-                        ?>
                       </div>
                     </div>
                   </div>
