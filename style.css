@@ -1,0 +1,12 @@
+img {
+    cursor: pointer;
+}
+
+.expiration {
+    color: red;
+    display: none;
+}
+
+.card-body:hover .expiration {
+    display: block;
+}

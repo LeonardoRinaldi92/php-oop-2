@@ -21,4 +21,6 @@ if ($animale && $genere !== '') {
 } else {
     $filteredArray = $arrayArticoli;
 }
+
+
 ?>
