@@ -10,9 +10,9 @@ class MainArticle {
 
     public function getAnimalType() {
         if ($this->AnimalType == 1){
-            return '<i class="fa-solid fa-dog fa-fade"></i>';
+            return '<i class="fa-solid fa-dog "></i>';
         } else if ($this->AnimalType == 2) {
-            return '<i class="fa-solid fa-cat fa-fade"></i>';
+            return '<i class="fa-solid fa-cat "></i>';
         } 
     }
 

@@ -1,7 +1,7 @@
 <?php
 require __DIR__ . '/../../database/db.php';
-include_once __DIR__ . '/../../components/functions.php'
-
+include_once __DIR__ . '/../../components/functions.php';
+include_once __DIR__ . '/form.php';
 
 
 
@@ -10,32 +10,7 @@ include_once __DIR__ . '/../../components/functions.php'
 
 
 ?>
-<form action="index.php" method="POST">
-    <div class="container py-5">
-        <div class="row">
-            <div class="col-2">
-                <select class="form-select" aria-label="animale" name="animale">
-                    <option selected>Che animale cerchi?</option>
-                    <option value="1">cane</option>
-                    <option value="2">gatto</option>
-                </select>
-            </div>
-            <div class="col-3">
-                <select class="form-select" aria-label="genere" name="genere">
-                    <option selected value="">Che genere cerchi?</option>
-                    <option value="cibo">Cibo</option>
-                    <option value="cura">articoli per la cura del tuo animale</option>
-                    <option value="accessori">accessori per il tuo animale</option>
-                </select>
-            </div> 
-            <div class="col-1">
-                <button type="submit">
-                    CERCA
-                </button>
-            </div>
-        </div>
-    </div>
-</form>
+
 
 <div class="container py-5">
     <div class="row">
@@ -45,7 +20,7 @@ include_once __DIR__ . '/../../components/functions.php'
                   <div class="row g-0">
                     <div class="col-md-4 position-relative">
                         <img src="<?php echo $element->image ?>" class="img-fluid rounded-start" alt="...">
-                        <div class="position-absolute" style="top:10px;left:10px;font-size:1.5rem"> 
+                        <div class="position-absolute" style="top:10px;left:0px;font-size:1.5rem"> 
                             <?php echo $element->getAnimalType() ?>
                         </div>
                     </div>
